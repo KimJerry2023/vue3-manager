@@ -44,11 +44,11 @@ npm run build
 
 ### 登录
 
-![Image text](https://github.com/KimJerry2023/vue3-manager/tree/main/screenshots/screen1.jpg)
+![Image text](https://raw.githubusercontent.com/KimJerry2023/vue3-manager/main/screenshots/screen1.jpg)
 
 ### 首页
 
-![Image text](https://github.com/KimJerry2023/vue3-manager/tree/main/screenshots/screen1.jpg)
+![Image text](https://raw.githubusercontent.com/KimJerry2023/vue3-manager/main/screenshots/screen2.jpg)
 
 ## License
 
