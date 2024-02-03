@@ -4,10 +4,12 @@ import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import App from './App.vue'
 import router from './router'
 import { usePermissStore } from '@/stores/permiss'
+import echarts from '@/common/echarts'
 import 'element-plus/dist/index.css'
 import './assets/css/icon.css'
 
 const app = createApp(App)
+app.config.globalProperties.echarts = echarts
 app.use(createPinia())
 app.use(router)
 

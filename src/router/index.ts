@@ -1,13 +1,14 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 import { usePermissStore } from '@/stores/permiss'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
+import Home from '@/views/homePage.vue'
 
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    redirect: '/login'
+    redirect: '/dashboard'
   },
   {
     path: '/login',
@@ -16,11 +17,27 @@ const routes: RouteRecordRaw[] = [
       title: '登录'
     },
     component: () => import(/* webpackChunkName: "login" */ '@/views/loginPage.vue')
+  },
+  {
+    path: '/',
+    name: 'Home',
+    component: Home,
+    children: [
+      {
+        path: '/dashboard',
+        name: 'dashboard',
+        meta: {
+          title: '系统首页',
+          permiss: '1'
+        },
+        component: () => import(/* webpackChunkName: "dashboard" */ '@/views/dashboardPage.vue'),
+      }
+    ]
   }
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
 

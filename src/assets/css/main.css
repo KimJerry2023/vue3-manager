@@ -13,7 +13,8 @@ body,
 }
 
 body {
-  font-family: 'PingFang SC', "Helvetica Neue", Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+  font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, 'microsoft yahei', arial, STHeiTi,
+    sans-serif;
 }
 
 a {
@@ -21,15 +22,15 @@ a {
 }
 
 .content-box {
-  position: absoluate;
+  position: absolute;
   left: 250px;
   right: 0;
-    top: 70px;
-    bottom: 0;
-    padding-bottom: 30px;
-    -webkit-transition: left .3s ease-in-out;
-    transition: left .3s ease-in-out;
-    background: #f0f0f0;
+  top: 70px;
+  bottom: 0;
+  padding-bottom: 30px;
+  -webkit-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
+  background: #f0f0f0;
 }
 
 .content {
@@ -69,7 +70,7 @@ a {
   margin-bottom: 20px;
 }
 
-.el-button+.el-tooltip {
+.el-button + .el-tooltip {
   margin-left: 10px;
 }
 
@@ -79,7 +80,7 @@ a {
 
 .move-enter-active,
 .move-leave-active {
-  transition: opacity .1s ease;
+  transition: opacity 0.1s ease;
 }
 
 .move-enter-from,
@@ -106,8 +107,8 @@ a {
   padding-bottom: 0;
 }
 
-
-[class*=" el-icon-"], [class^=el-icon-] {
+[class*=' el-icon-'],
+[class^='el-icon-'] {
   font-style: normal;
   font-weight: 400;
   font-variant: normal;
@@ -118,7 +119,7 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.el-sub-menu [class^=el-icon-] {
+.el-sub-menu [class^='el-icon-'] {
   vertical-align: middle;
   margin-right: 5px;
   width: 24px;
@@ -126,6 +127,6 @@ a {
   font-size: 18px;
 }
 
-[hidden]{
+[hidden] {
   display: none !important;
 }
