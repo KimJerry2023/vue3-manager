@@ -1,52 +1,55 @@
-# vue3-manager
+# vue-manage-system
 
-This template should help get you started developing with Vue 3 in Vite.
+基于 Vue3 + pinia + Element Plus 的后台管理系统解决方案。
 
-## Recommended IDE Setup
+## 前言
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+该方案作为一套多功能的后台框架模板，适用于绝大部分的后台管理系统开发。基于 Vue3 + pinia + typescript，引用 Element Plus 组件库，方便开发。实现逻辑简单，适合外包项目，快速交付。
 
-## Type Support for `.vue` Imports in TS
+## 功能
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+-   [x] Element Plus
+-   [x] vite 3
+-   [x] pinia
+-   [x] typescript
+-   [x] 登录/注销
+-   [x] Dashboard
+-   [x] 表格
+-   [x] Tab 选项卡
+-   [x] 表单
+-   [x] 图表 :bar_chart:
+-   [x] 富文本/markdown编辑器
+-   [x] 图片拖拽/裁剪上传
+-   [x] 权限管理
+-   [x] 三级菜单
+-   [x] 自定义图标
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## 安装步骤
+> 因为使用vite3，node版本需要 14.18+
 
-## Customize configuration
+```
+git clone https://github.com/KimJerry2023/vue3-manager.git      // 把模板下载到本地
+cd vue-manage-system    // 进入模板目录
+npm install         // 安装项目依赖，等待安装完成之后，安装失败可用 cnpm 或 yarn
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+// 运行
+npm run dev
 
-## Project Setup
-
-```sh
-pnpm install
+// 执行构建命令，生成的dist文件夹放在服务器下即可访问
+npm run build
 ```
 
-### Compile and Hot-Reload for Development
+## 项目截图
 
-```sh
-pnpm dev
-```
+### 登录
 
-### Type-Check, Compile and Minify for Production
+![Image text](https://github.com/KimJerry2023/vue3-manager/raw/master/screenshots/screen1.jpg)
 
-```sh
-pnpm build
-```
+### 首页
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+![Image text](https://github.com/KimJerry2023/vue3-manager/raw/master/screenshots/screen1.jpg)
 
-```sh
-pnpm test:unit
-```
+## License
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+[MIT]
