@@ -42,11 +42,11 @@ npm run build
 
 ## 项目截图
 
-### 登录
+### 首页
 
 ![Image text](https://raw.githubusercontent.com/KimJerry2023/vue3-manager/main/screenshots/screen1.jpg)
 
-### 首页
+### 登录
 
 ![Image text](https://raw.githubusercontent.com/KimJerry2023/vue3-manager/main/screenshots/screen2.jpg)
 
